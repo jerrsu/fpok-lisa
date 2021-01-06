@@ -1,5 +1,5 @@
-# perpus-laravel
-Cara menggunakan dan selengkapnya bisa kalian buka di website saya gilacoding.com
+# LISA
+Human resourse at UPI from PT. IHOUSE DIGITAL KREATIF
 
 Terimakasih!
 # fpok-lisa
