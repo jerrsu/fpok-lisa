@@ -6,7 +6,7 @@
     'aliases' => 
     array (
     ),
-    'reference' => '68101343af927f58705634364a2c2207cc0ef77b',
+    'reference' => '159b0db1866e40b19d82861b6f53668a203de3e3',
     'name' => 'laravel/laravel',
   ),
   'versions' => 
@@ -99,12 +99,12 @@
     ),
     'egulias/email-validator' => 
     array (
-      'pretty_version' => '2.1.25',
-      'version' => '2.1.25.0',
+      'pretty_version' => '3.1.0',
+      'version' => '3.1.0.0',
       'aliases' => 
       array (
       ),
-      'reference' => '0dbf5d78455d4d6a41d186da50adc1122ec066f4',
+      'reference' => '62c3b73c581c834885acf6e120b412b76acc495a',
     ),
     'erusev/parsedown' => 
     array (
@@ -406,7 +406,7 @@
       'aliases' => 
       array (
       ),
-      'reference' => '68101343af927f58705634364a2c2207cc0ef77b',
+      'reference' => '159b0db1866e40b19d82861b6f53668a203de3e3',
     ),
     'laravel/tinker' => 
     array (
@@ -841,12 +841,12 @@
     ),
     'swiftmailer/swiftmailer' => 
     array (
-      'pretty_version' => 'v6.2.6',
-      'version' => '6.2.6.0',
+      'pretty_version' => 'v6.2.7',
+      'version' => '6.2.7.0',
       'aliases' => 
       array (
       ),
-      'reference' => 'd2791ff0b73247cdc2096b14f5580aba40c12bff',
+      'reference' => '15f7faf8508e04471f666633addacf54c0ab5933',
     ),
     'symfony/console' => 
     array (
@@ -1096,12 +1096,12 @@
     ),
     'webmozart/assert' => 
     array (
-      'pretty_version' => '1.9.1',
-      'version' => '1.9.1.0',
+      'pretty_version' => '1.10.0',
+      'version' => '1.10.0.0',
       'aliases' => 
       array (
       ),
-      'reference' => 'bafc69caeb4d49c39fd0779086c03a3738cbb389',
+      'reference' => '6964c76c7804814a842473e0c8fd15bab0f18e25',
     ),
   ),
 );

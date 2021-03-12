@@ -41,34 +41,26 @@ class HomeController extends Controller
         }
 
         $pegawai = DataPegawai::get();
-        // $anggota   = Anggota::get();
-        // $buku      = Buku::get();
         $tahu   = date('Y') ;
         $jabatan_fungsional = DataFungsional::get();
-        $cuti = ChartCutiModel::where('tahun',$tahu)->get();
         $bulan = [];
         $jumlah = [];
 
-        foreach($cuti as $c){
+        $query = DB::table('data_pengajuan_cuti')
+        ->select(DB::raw('CONCAT(month_name, ", ", year_number) AS bulan'),DB::raw('COUNT(*) as jumlah'),'year_number as tahun')
+        // ->where('category_id', '=', 1)
+        ->groupBy('month_name','year_number')
+        ->orderBy('start_date', 'asc')
+        ->get();
+
+        foreach($query as $c){
             $bulan[] = $c->bulan;
             $jumlah[] = $c->jumlah;
         }
 
-        // dd($bulan);
 
-        return view('home', compact( 'jabatan_fungsional','pegawai','cuti','bulan','jumlah'));
+        return view('home', compact( 'jabatan_fungsional','pegawai','bulan','jumlah'));
     }
 
-    /**
-    * Fetch the particular company details
-     * @return json response
-     */
-      public function chart()
-      {
-        // $label         = ["January","February","March","April","May","June","July","August","September","October","November","December"];
-        $chart = ChartCutiModel::where('year',date("Y"))
-        // ->where('month',$label )
-        ->get();
-        return response()->json($chart);
-      }
+    
 }

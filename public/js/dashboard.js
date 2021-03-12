@@ -9,23 +9,23 @@
       var data = {
           labels: Labels,
           datasets: [
-              {
-                  label: "Jumlah Cuti",
-                  data: Prices,
-                  backgroundColor: "#2196f3",
-                  borderColor: "#0c83e2",
-                  borderWidth: 1,
-                  fill: true
-              }
-            //   ,
             //   {
-            //       label: "Product",
-            //       data: [7, 5, 14, 7, 12, 6, 10, 6, 11, 5],
-            //       backgroundColor: "#19d895",
-            //       borderColor: "#15b67d",
+            //       label: "Jumlah Cuti",
+            //       data: Prices,
+            //       backgroundColor: "#2196f3",
+            //       borderColor: "#0c83e2",
             //       borderWidth: 1,
             //       fill: true
             //   }
+            //   ,
+              {
+                  label: "Product",
+                  data: [7, 5, 14, 7, 12, 6, 10, 6, 11, 5],
+                  backgroundColor: "#19d895",
+                  borderColor: "#15b67d",
+                  borderWidth: 1,
+                  fill: true
+              }
           ]
       };
       var options = {
