@@ -27,7 +27,7 @@ use App\DataStudyViewer;
 
 use App\UnitKerja;
 use App\Status;
-use App\JabatanFUngsional;
+use App\JabatanFungsional;
 use Carbon\Carbon;
 use Session;
 use Illuminate\Support\Facades\Redirect;
@@ -77,7 +77,7 @@ class DataPegawaiController extends Controller
 
         $units = UnitKerja::get();
         $status = Status::get();
-        $jabfus = JabatanFUngsional::get();
+        $jabfus = JabatanFungsional::get();
         return view('dataPegawai.create', compact('units', 'status', 'jabfus'));
         // return view('dataPegawai.create');
     }
